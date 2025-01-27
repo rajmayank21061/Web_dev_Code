@@ -1,0 +1,25 @@
+@use "color1" as colors1;
+@use "color2" as colors2;
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    color: colors1.$white;
+    background: colors1.$black;
+}
+%custom{
+    background-color: colors2.$rgb1;
+    padding: 2rem 3rem;
+    border:none;
+    cursor:pointer;
+}
+@mixin customFunc($color,$font){
+    background-color: $color;
+    font-weight: $font
+}
+p{
+    @extend %custom;
+}
+.main p{
+    @include customFunc(red, 700);
+}

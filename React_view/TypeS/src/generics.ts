@@ -9,8 +9,8 @@ interface player{
     age:number;
 }
 //extend require for age property
-function getOldest<T extends hasAge>(people:T[]):T{
-    return people.sort((a,b) => b.age - a.age) [0] ;
+function getOldest<T extends hasAge>(people_ages:T[]):T{
+    return people_ages.sort((a,b) => b.age - a.age) [0] ;
 }
 
 const ages = [{age:43},{age:1},{age:6},{age:8},{age:34}];

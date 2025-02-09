@@ -1,0 +1,18 @@
+main {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  background: #272727;
+}
+
+p {
+  background-color: rgb(24, 200, 19);
+  padding: 2rem 3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.main p {
+  background-color: red;
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */
